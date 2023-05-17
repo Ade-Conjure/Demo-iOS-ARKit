@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33507EE429FA7DA500133179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33507EE329FA7DA500133179 /* AppDelegate.swift */; };
+		33507EE629FA7DA500133179 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33507EE529FA7DA500133179 /* SceneDelegate.swift */; };
+		33507EEB29FA7DA500133179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33507EE929FA7DA500133179 /* Main.storyboard */; };
+		33507EED29FA7DA700133179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33507EEC29FA7DA700133179 /* Assets.xcassets */; };
+		33507EF029FA7DA700133179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33507EEE29FA7DA700133179 /* LaunchScreen.storyboard */; };
+		33507EFA29FA802800133179 /* simd+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33507EF929FA802800133179 /* simd+Helpers.swift */; };
+		33507F0A29FA82B900133179 /* BusStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33507F0929FA82B900133179 /* BusStop.swift */; };
+		33507F1529FA8F6D00133179 /* BusStopARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33507F1329FA8F6D00133179 /* BusStopARViewController.swift */; };
+		33507F1629FA8F6D00133179 /* BusStopARViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33507F1429FA8F6D00133179 /* BusStopARViewModel.swift */; };
+		33507F1E29FA8FA800133179 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33507F1729FA8FA800133179 /* NetworkManager.swift */; };
+		33507F1F29FA8FA800133179 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33507F1829FA8FA800133179 /* Endpoint.swift */; };
+		33507F2029FA8FA800133179 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33507F1929FA8FA800133179 /* APIError.swift */; };
+		33507F2129FA8FA800133179 /* Networkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33507F1A29FA8FA800133179 /* Networkable.swift */; };
+		33507F2229FA8FA800133179 /* BusStopEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33507F1B29FA8FA800133179 /* BusStopEndpoints.swift */; };
+		33507F2329FA8FA800133179 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33507F1C29FA8FA800133179 /* Coordinates.swift */; };
+		33507F2429FA8FA800133179 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33507F1D29FA8FA800133179 /* LocationService.swift */; };
+		33507F2629FA8FDB00133179 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33507F2529FA8FDB00133179 /* Constants.swift */; };
+		33507F2829FA977200133179 /* ArrivalTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33507F2729FA977200133179 /* ArrivalTime.swift */; };
+		33507F2C29FA9D4E00133179 /* BusStopNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33507F2B29FA9D4E00133179 /* BusStopNode.swift */; };
+		33507F2E29FA9F8300133179 /* SCNode+Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33507F2D29FA9F8300133179 /* SCNode+Text.swift */; };
+		33507F3029FA9FC200133179 /* SCNVector3+Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33507F2F29FA9FC200133179 /* SCNVector3+Distance.swift */; };
+		33507F3229FAE14E00133179 /* BusRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33507F3129FAE14E00133179 /* BusRoute.swift */; };
+		33507F3429FAE30E00133179 /* BusRouteEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33507F3329FAE30E00133179 /* BusRouteEndPoints.swift */; };
+		33507F3629FB7DE700133179 /* ArrowNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33507F3529FB7DE700133179 /* ArrowNode.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		33507EE029FA7DA500133179 /* ARBusStopDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARBusStopDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33507EE329FA7DA500133179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		33507EE529FA7DA500133179 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		33507EEA29FA7DA500133179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		33507EEC29FA7DA700133179 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33507EEF29FA7DA700133179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		33507EF129FA7DA700133179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33507EF929FA802800133179 /* simd+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "simd+Helpers.swift"; sourceTree = "<group>"; };
+		33507F0929FA82B900133179 /* BusStop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStop.swift; sourceTree = "<group>"; };
+		33507F1329FA8F6D00133179 /* BusStopARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStopARViewController.swift; sourceTree = "<group>"; };
+		33507F1429FA8F6D00133179 /* BusStopARViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStopARViewModel.swift; sourceTree = "<group>"; };
+		33507F1729FA8FA800133179 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		33507F1829FA8FA800133179 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		33507F1929FA8FA800133179 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		33507F1A29FA8FA800133179 /* Networkable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networkable.swift; sourceTree = "<group>"; };
+		33507F1B29FA8FA800133179 /* BusStopEndpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStopEndpoints.swift; sourceTree = "<group>"; };
+		33507F1C29FA8FA800133179 /* Coordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
+		33507F1D29FA8FA800133179 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		33507F2529FA8FDB00133179 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		33507F2729FA977200133179 /* ArrivalTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalTime.swift; sourceTree = "<group>"; };
+		33507F2B29FA9D4E00133179 /* BusStopNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStopNode.swift; sourceTree = "<group>"; };
+		33507F2D29FA9F8300133179 /* SCNode+Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNode+Text.swift"; sourceTree = "<group>"; };
+		33507F2F29FA9FC200133179 /* SCNVector3+Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Distance.swift"; sourceTree = "<group>"; };
+		33507F3129FAE14E00133179 /* BusRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRoute.swift; sourceTree = "<group>"; };
+		33507F3329FAE30E00133179 /* BusRouteEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRouteEndPoints.swift; sourceTree = "<group>"; };
+		33507F3529FB7DE700133179 /* ArrowNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowNode.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33507EDD29FA7DA500133179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33507ED729FA7DA500133179 = {
+			isa = PBXGroup;
+			children = (
+				33507EE229FA7DA500133179 /* ARBusStopDemo */,
+				33507EE129FA7DA500133179 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		33507EE129FA7DA500133179 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33507EE029FA7DA500133179 /* ARBusStopDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33507EE229FA7DA500133179 /* ARBusStopDemo */ = {
+			isa = PBXGroup;
+			children = (
+				33507F0C29FA833900133179 /* Extension */,
+				33507F0829FA82AC00133179 /* Domain */,
+				33507EFB29FA824100133179 /* API */,
+				33507F1229FA8F5400133179 /* View */,
+				33507EE329FA7DA500133179 /* AppDelegate.swift */,
+				33507EE529FA7DA500133179 /* SceneDelegate.swift */,
+				33507EE929FA7DA500133179 /* Main.storyboard */,
+				33507EEC29FA7DA700133179 /* Assets.xcassets */,
+				33507EEE29FA7DA700133179 /* LaunchScreen.storyboard */,
+				33507EF129FA7DA700133179 /* Info.plist */,
+			);
+			path = ARBusStopDemo;
+			sourceTree = "<group>";
+		};
+		33507EFB29FA824100133179 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				33507F1929FA8FA800133179 /* APIError.swift */,
+				33507F1B29FA8FA800133179 /* BusStopEndpoints.swift */,
+				33507F3329FAE30E00133179 /* BusRouteEndPoints.swift */,
+				33507F1C29FA8FA800133179 /* Coordinates.swift */,
+				33507F1829FA8FA800133179 /* Endpoint.swift */,
+				33507F1D29FA8FA800133179 /* LocationService.swift */,
+				33507F1A29FA8FA800133179 /* Networkable.swift */,
+				33507F1729FA8FA800133179 /* NetworkManager.swift */,
+				33507F2529FA8FDB00133179 /* Constants.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		33507F0829FA82AC00133179 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				33507F0929FA82B900133179 /* BusStop.swift */,
+				33507F3129FAE14E00133179 /* BusRoute.swift */,
+				33507F2729FA977200133179 /* ArrivalTime.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		33507F0C29FA833900133179 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				33507EF929FA802800133179 /* simd+Helpers.swift */,
+				33507F2D29FA9F8300133179 /* SCNode+Text.swift */,
+				33507F2F29FA9FC200133179 /* SCNVector3+Distance.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		33507F1229FA8F5400133179 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				33507F1329FA8F6D00133179 /* BusStopARViewController.swift */,
+				33507F1429FA8F6D00133179 /* BusStopARViewModel.swift */,
+				33507F2B29FA9D4E00133179 /* BusStopNode.swift */,
+				33507F3529FB7DE700133179 /* ArrowNode.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33507EDF29FA7DA500133179 /* ARBusStopDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33507EF429FA7DA700133179 /* Build configuration list for PBXNativeTarget "ARBusStopDemo" */;
+			buildPhases = (
+				33507EDC29FA7DA500133179 /* Sources */,
+				33507EDD29FA7DA500133179 /* Frameworks */,
+				33507EDE29FA7DA500133179 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARBusStopDemo;
+			productName = ARBusStopDemo;
+			productReference = 33507EE029FA7DA500133179 /* ARBusStopDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33507ED829FA7DA500133179 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					33507EDF29FA7DA500133179 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 33507EDB29FA7DA500133179 /* Build configuration list for PBXProject "ARBusStopDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33507ED729FA7DA500133179;
+			productRefGroup = 33507EE129FA7DA500133179 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33507EDF29FA7DA500133179 /* ARBusStopDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33507EDE29FA7DA500133179 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33507EF029FA7DA700133179 /* LaunchScreen.storyboard in Resources */,
+				33507EED29FA7DA700133179 /* Assets.xcassets in Resources */,
+				33507EEB29FA7DA500133179 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33507EDC29FA7DA500133179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33507F1529FA8F6D00133179 /* BusStopARViewController.swift in Sources */,
+				33507EFA29FA802800133179 /* simd+Helpers.swift in Sources */,
+				33507F2C29FA9D4E00133179 /* BusStopNode.swift in Sources */,
+				33507F1F29FA8FA800133179 /* Endpoint.swift in Sources */,
+				33507F3029FA9FC200133179 /* SCNVector3+Distance.swift in Sources */,
+				33507F2329FA8FA800133179 /* Coordinates.swift in Sources */,
+				33507EE429FA7DA500133179 /* AppDelegate.swift in Sources */,
+				33507F2829FA977200133179 /* ArrivalTime.swift in Sources */,
+				33507F1E29FA8FA800133179 /* NetworkManager.swift in Sources */,
+				33507F2E29FA9F8300133179 /* SCNode+Text.swift in Sources */,
+				33507F2229FA8FA800133179 /* BusStopEndpoints.swift in Sources */,
+				33507F0A29FA82B900133179 /* BusStop.swift in Sources */,
+				33507F1629FA8F6D00133179 /* BusStopARViewModel.swift in Sources */,
+				33507F2429FA8FA800133179 /* LocationService.swift in Sources */,
+				33507F3629FB7DE700133179 /* ArrowNode.swift in Sources */,
+				33507F3229FAE14E00133179 /* BusRoute.swift in Sources */,
+				33507EE629FA7DA500133179 /* SceneDelegate.swift in Sources */,
+				33507F2629FA8FDB00133179 /* Constants.swift in Sources */,
+				33507F2129FA8FA800133179 /* Networkable.swift in Sources */,
+				33507F2029FA8FA800133179 /* APIError.swift in Sources */,
+				33507F3429FAE30E00133179 /* BusRouteEndPoints.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		33507EE929FA7DA500133179 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33507EEA29FA7DA500133179 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		33507EEE29FA7DA700133179 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33507EEF29FA7DA700133179 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33507EF229FA7DA700133179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		33507EF329FA7DA700133179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33507EF529FA7DA700133179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 64R63CKBG6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ARBusStopDemo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This application will use the camera for Augmented Reality.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need to use Location Service to get your coordinates";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to use Location Service to get your coordinates";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.conjure.ARBusStopDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		33507EF629FA7DA700133179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 64R63CKBG6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ARBusStopDemo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This application will use the camera for Augmented Reality.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need to use Location Service to get your coordinates";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to use Location Service to get your coordinates";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.conjure.ARBusStopDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33507EDB29FA7DA500133179 /* Build configuration list for PBXProject "ARBusStopDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33507EF229FA7DA700133179 /* Debug */,
+				33507EF329FA7DA700133179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33507EF429FA7DA700133179 /* Build configuration list for PBXNativeTarget "ARBusStopDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33507EF529FA7DA700133179 /* Debug */,
+				33507EF629FA7DA700133179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33507ED829FA7DA500133179 /* Project object */;
+}
