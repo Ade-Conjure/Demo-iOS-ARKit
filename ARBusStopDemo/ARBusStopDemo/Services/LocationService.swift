@@ -34,14 +34,8 @@ final class LocationService: NSObject {
     }
     
     func usersCurrentLocation() {
-        
-        let authorizationStatus: CLAuthorizationStatus
-        if #available(iOS 14, *) {
-            authorizationStatus = locationManager.authorizationStatus
-        } else {
-            authorizationStatus = CLLocationManager.authorizationStatus()
-        }
-        
+        let authorizationStatus = locationManager.authorizationStatus
+
         DispatchQueue.global().async {
             if CLLocationManager.locationServicesEnabled() {
                 switch authorizationStatus {

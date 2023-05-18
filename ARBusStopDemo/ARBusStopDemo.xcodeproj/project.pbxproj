@@ -92,12 +92,14 @@
 		33507EE229FA7DA500133179 /* ARBusStopDemo */ = {
 			isa = PBXGroup;
 			children = (
+				33507EFB29FA824100133179 /* API */,
 				33507F0C29FA833900133179 /* Extension */,
 				33507F0829FA82AC00133179 /* Domain */,
-				33507EFB29FA824100133179 /* API */,
+				338E9C462A161472004E4D95 /* Services */,
 				33507F1229FA8F5400133179 /* View */,
 				33507EE329FA7DA500133179 /* AppDelegate.swift */,
 				33507EE529FA7DA500133179 /* SceneDelegate.swift */,
+				33507F2529FA8FDB00133179 /* Constants.swift */,
 				33507EE929FA7DA500133179 /* Main.storyboard */,
 				33507EEC29FA7DA700133179 /* Assets.xcassets */,
 				33507EEE29FA7DA700133179 /* LaunchScreen.storyboard */,
@@ -112,12 +114,9 @@
 				33507F1929FA8FA800133179 /* APIError.swift */,
 				33507F1B29FA8FA800133179 /* BusStopEndpoints.swift */,
 				33507F3329FAE30E00133179 /* BusRouteEndPoints.swift */,
-				33507F1C29FA8FA800133179 /* Coordinates.swift */,
 				33507F1829FA8FA800133179 /* Endpoint.swift */,
-				33507F1D29FA8FA800133179 /* LocationService.swift */,
 				33507F1A29FA8FA800133179 /* Networkable.swift */,
 				33507F1729FA8FA800133179 /* NetworkManager.swift */,
-				33507F2529FA8FDB00133179 /* Constants.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -151,6 +150,15 @@
 				33507F3529FB7DE700133179 /* ArrowNode.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		338E9C462A161472004E4D95 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				33507F1D29FA8FA800133179 /* LocationService.swift */,
+				33507F1C29FA8FA800133179 /* Coordinates.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
