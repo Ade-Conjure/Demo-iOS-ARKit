@@ -13,9 +13,9 @@ The cubes not only serve as visual markers but also provide interactive function
 Overall, using coreLocation, the demo app accurately determines the user's location, allowing the view to display the user's position relative to the bus stops. The cubes in the ARKit view represent the bus stops, and tapping on a cube triggers the display of the corresponding bus stop's name, providing an interactive and informative experience for the user.
 
 ## Requirements
-This project requires that you enable location services on your device, and permission to use camera on the device. Also, you will need to get a Transport for London API id and key from their developer's webpage.
+This project requires that you enable location services on your device, and permission to use camera on the device. Also, you will need to get a Transport for London API ID and key from their developer's webpage.
 
-Once you have the API id and key, please enter them in the Constants.swift file in the Xcode project.
+Once you have the API ID and key, please enter them in the Constants.swift file in the Xcode project.
 
 ```swift
     struct Constants {
